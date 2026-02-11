@@ -1,0 +1,38 @@
+{
+  "frases": {
+    "primeraParte": [
+      "Tenés un talento natural para parecer ",
+      "Te escucho hablar y me pregunto si el esfuerzo que hacés por parecer ",
+      "Es fascinante cómo lográs ser como",
+      "Tu presencia me recuerda mucho a ",
+      "Escucharte es como tratar de encontrarle la gracia a ",
+      "Tus palabras tienen el mismo impacto que ",
+      "Tu tono es tan monótono como ",
+      "Tu humor es tan gracioso como "
+    ],
+    "segundaParte": [
+      "una paloma con diarrea",
+      "una impresora sin tinta",
+      "un mate lavado",
+      "un trago sin hielo",
+      "un Therian sin cola",
+      "un Wi-Fi que solo funciona al lado del router",
+      "una media mojada dentro del zapato",
+      "un control remoto sin pilas",
+      "una ensalada de lechuga sin sal",
+      "un paraguas que se da vuelta con el viento"
+    ],
+    "terceraParte": [
+      "en medio de un análisis de orina",
+      "en el velatorio de un payaso",
+      "en una carrera de caracoles rengos",
+      "en un ascensor lleno de gente en silencio",
+      "durante una entrevista de trabajo en calzoncillos",
+      "en el estreno de una película muda subtitulada en braille",
+      "en una convención de mimos gritando",
+      "en la guardia de un hospital un sábado a las 4 AM",
+      "en un retiro espiritual dentro de un boliche",
+      "haciendo la fila del cajero con saldo en rojo"
+    ]
+  }
+}
