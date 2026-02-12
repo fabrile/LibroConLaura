@@ -33,17 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function saveToGSheets(data) {
-    if (GSHEETS_URL === "" || GSHEETS_URL.includes("https://script.google.com/macros/s/AKfycbzMZojwRqUeNNwLfFOhLrqUoQwQoY9li-DM9JSsDiEKnbQ7JjSDzSpVKF_f4kXc8OuIZQ/exec")) return;
+    if (GSHEETS_URL.includes("TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI") || GSHEETS_URL === "") {
+      console.warn("GSHEETS_URL no configurada. Saltando guardado centralizado.");
+      return;
+    }
+    
+    console.log("Enviando insulto a Google Sheets...", data);
     
     try {
       await fetch(GSHEETS_URL, {
         method: "POST",
-        mode: "no-cors", // Requerido para Google Apps Scripts Web Apps
-        headers: { "Content-Type": "application/json" },
+        mode: "no-cors", 
+        headers: { "Content-Type": "text/plain" },
         body: JSON.stringify(data)
       });
+      console.log("Datos enviados correctamente a la Web App.");
     } catch (e) {
-      console.error("Error guardando en Sheets:", e);
+      console.error("Error al enviar a Google Sheets:", e);
     }
   }
 
