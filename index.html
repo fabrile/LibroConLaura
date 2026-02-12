@@ -23,5 +23,13 @@
       <button id="generate-btn">dame un insulto ya</button>
     </div>
     <script src="script.js"></script>
+    <script>
+    document.getElementById('generate-btn').addEventListener('click', function() {
+      gtag('event', 'generate_insult', {
+        'event_category': 'Interacción',
+        'event_label': 'Nuevo Insulto'
+      });
+    });
+  </script>
   </body>
 </html>
