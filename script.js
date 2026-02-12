@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function saveToGSheets(data) {
-    if (GSHEETS_URL.includes("TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI") || GSHEETS_URL === "") {
+    if (GSHEETS_URL.includes("https://script.google.com/macros/s/AKfycbzMZojwRqUeNNwLfFOhLrqUoQwQoY9li-DM9JSsDiEKnbQ7JjSDzSpVKF_f4kXc8OuIZQ/exec") || GSHEETS_URL === "") {
       console.warn("GSHEETS_URL no configurada. Saltando guardado centralizado.");
       return;
     }
