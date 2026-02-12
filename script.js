@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function saveToGSheets(data) {
-    if (GSHEETS_URL === "TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI") return;
+    if (GSHEETS_URL === "" || GSHEETS_URL.includes("https://script.google.com/macros/s/AKfycbzMZojwRqUeNNwLfFOhLrqUoQwQoY9li-DM9JSsDiEKnbQ7JjSDzSpVKF_f4kXc8OuIZQ/exec")) return;
     
     try {
       await fetch(GSHEETS_URL, {
