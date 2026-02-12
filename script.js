@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let frasesData = null;
 
   // URL del Web App de Google Apps Script (reemplazar después de desplegar)
-  const GSHEETS_URL = "https://script.google.com/macros/s/AKfycbx2m5hbuZPA-O96m2TC5dRimsJsd1v3v2Baprd2_H_Lw2H47nAKUHjztIw36Cl2ihI4/exec";
+  const GSHEETS_URL = "https://script.google.com/macros/s/AKfycby6qXWH-UhI6JhTmSnhjB87DWT5SYEWZYOfD8duGaPrsDd4GExgnu41AcZI4Jr2BuEr/exec";
 
   // Cargar el JSON
   fetch("frases.json")
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function saveToGSheets(data) {
-    if (GSHEETS_URL.includes("https://script.google.com/macros/s/AKfycbx2m5hbuZPA-O96m2TC5dRimsJsd1v3v2Baprd2_H_Lw2H47nAKUHjztIw36Cl2ihI4/exec") || GSHEETS_URL === "") {
+    if (!GSHEETS_URL || GSHEETS_URL === "TU_URL_AQUI") {
       console.warn("GSHEETS_URL no configurada. Saltando guardado centralizado.");
       return;
     }
